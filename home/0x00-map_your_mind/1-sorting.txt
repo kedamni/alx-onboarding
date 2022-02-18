@@ -1,29 +1,11 @@
-with Ada.Text_IO; use Ada.Text_IO; 
-with Ada.Float_Text_IO; use Ada.Float_Text_IO; 
- 
-procedure sum_and_average is 
-   subtype valid_range is float range 0.0 .. 100.0; 
-   input : float; 
-   sum   : float := 0.0; 
-   avg   : float; 
-   count : integer := 0; 
 begin 
-   put("Enter 10 numbers in the range of 0 through 100: "); 
-   loop 
-      get(input); 
-      if input in valid_range then 
-         sum := sum + input; 
-         count := count + 1; 
-      else 
-         Put_Line("Invalid input!"); 
-         Put_Line("Enter a number in the range of 0 through 100: "); 
-      end if; 
-      exit when count = 10; 
-   end loop; 
-   avg := sum / 10.0; 
-   put("The sum of 10 numbers is "); 
-   put(item => sum, aft => 2, exp => 0); 
-   new_line; 
-   put("The average of the 10 input values is "); 
-   put(item => avg, aft => 2, exp => 0); 
-end sum_and_average; 
+number a , b, c
+input a, b, c
+
+if (a>c)
+	swap(a,c)
+if (a>b)
+	swap(a,b)
+if (b>c)
+	swap(b,c)
+end
